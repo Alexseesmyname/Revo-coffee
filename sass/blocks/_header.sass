@@ -1,0 +1,91 @@
+.header
+    position: relative
+    max-height: 768px
+    margin-bottom: 87px
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        background-color: $primary
+        width: 40%
+    &__container
+        position: relative
+        z-index: 2
+        display: flex
+        width: 1400px
+        height: 768px
+        background-color: $background
+    &__logo-wrapper
+        margin: 75px 129px 0
+        width: 124px
+        height: 40px
+    &__logo
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .title
+        position: absolute
+        bottom: 18px
+        left: 141px
+        width: 470px
+        font-family: 'Montserrat', sans-serif
+        font-weight: 900
+        font-size: 54px
+        line-height: 70px
+        text-transform: uppercase
+        color: $primary
+        &__word
+            padding: 0 15px
+            color: $background
+            background-color: $secondary
+    .video
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 690px
+        background-image: url(../img/video-bg.png)
+        background-repeat: no-repeat
+        background-position: -67px -67px
+        background-size: 757px auto
+        &__play-button
+            display: flex
+            align-items: center
+            width: 54px
+            height: 54px
+            padding: 0 19px 0 23px
+            border: 0
+            border-radius: 50%
+            background-color: #ffffff
+            cursor: pointer
+    .navbar
+        width: 328px
+        padding-top: 75px
+        padding-left: 57px
+        background-color: $primary
+        &__shopping-cart-wrapper
+            display: flex
+            align-items: center
+            height: 40px
+            margin-bottom: 115px
+        &__title
+            margin: 0 0 30px 0
+            font-weight: 700
+            font-size: 16px
+            line-height: 22px
+            color: $light-grey
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+        &__item
+            margin-bottom: 27px
+            font-size: 16px
+            line-height: 22px
+            color: $light-grey
+            &:last-child
+                margin-bottom: 0
+        &__link
+            color: inherit
+            text-decoration: none
